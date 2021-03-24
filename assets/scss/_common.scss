@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+
+  letter-spacing: 0.1em;
+
+  color: $color-gray;
+
+  font-family: $font-main;
+  font-size: $font-size;
+  line-height: 1.2;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 0.08em;
+
+  font-family: $font-header;
+  font-weight: 300;
+
+  @include lg-min {
+    font-size: 3.75rem;
+  }
+  @include lg-md {
+    font-size: 2.5rem;
+  }
+  @include md {
+    font-size: 1.875rem;
+  }
+}
+
+a {
+  text-decoration: none;
+
+  color: $color-light;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 0.5s;
+  letter-spacing: 0.1em;
+}
+
+.btn--light {
+  border: 2px solid $color-light;
+  background-color: rgba($color-light, 0.1);
+
+  @include lg-min {
+    min-width: 250px;
+    height: 60px;
+
+    font-size: 1.125rem;
+  }
+  @include lg-md {
+    min-width: 200px;
+    height: 50px;
+  }
+  @include md {
+    min-width: 170px;
+    height: 40px;
+  }
+}
+
+.btn--primary {
+  height: 60px;
+
+  border: 2px solid $color-primary;
+  background-color: rgba($color-primary, 0.8);
+
+  font-size: 1.125rem;
+
+  @include sm-min {
+    min-width: 350px;
+  }
+  @include sm {
+    min-width: 100%;
+  }
+}
+
+.btn:hover {
+  background-color: $color-accent;
+}
