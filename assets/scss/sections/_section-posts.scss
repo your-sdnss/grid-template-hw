@@ -1,13 +1,13 @@
 .posts {
-  @include lg-min{
+  @include lg-min {
     padding-top: $gap / 2 * 10;
     padding-bottom: $gap / 2 * 10;
   }
-  @include lg-md{
+  @include lg-md {
     padding-top: $gap * 4;
     padding-bottom: $gap * 4;
   }
-  @include md{
+  @include md {
     padding-top: $gap * 3;
     padding-bottom: $gap * 3;
   }
@@ -47,12 +47,13 @@
   font-size: 2.5rem;
 }
 
-.posts-item{
-  background-color: rgba($color-gray-light, 0.5);
+.posts-item {
   transition: background-color 0.5s;
+
+  background-color: rgba($color-gray-light, 0.5);
 }
 
-.posts-item:hover{
+.posts-item:hover {
   background-color: $color-gray-light;
 }
 
@@ -66,17 +67,16 @@
 
 .posts-item__image {
   display: flex;
+  overflow: hidden;
   align-content: center;
   justify-content: center;
-
-  overflow: hidden;
 }
 
-.posts-item__image>img{
+.posts-item__image > img {
   transition: transform 0.5s;
 }
 
-.posts-item:hover .posts-item__image>img{
+.posts-item:hover .posts-item__image > img {
   transform: scale(1.2);
 }
 
