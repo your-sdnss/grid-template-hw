@@ -1,5 +1,5 @@
 .form {
-  padding: $gap + 10px;
+  padding: $gap + 10px 0;
 
   background-color: $color-primary;
 }
@@ -30,26 +30,7 @@
   justify-content: center;
 }
 
-.form-item__input {
-  display: block;
-
-  width: 100%;
-  height: $gap * 3;
-  padding-right: $gap + 10;
-  padding-left: $gap + 10;
-
-  transition: background-color 0.5s, border 0.5s;
-  letter-spacing: 0.1em;
-
-  color: $color-light;
-  border: 2px solid transparent;
-  border-bottom-color: rgba($color-light, 0.5);
-  background-color: rgba($color-light, 0.1);
-
-  font-size: 1.1em;
-}
-
-.form-item__button {
+.form-item__input, .form-item__button{
   display: block;
 
   width: 100%;
@@ -78,12 +59,14 @@
 .form-item__button:focus {
   border: 2px solid rgba($color-light, 0.7);
   background-color: $color-accent;
+  outline: none;
 }
 
 .form-item:hover .form-item__input,
 .form-item__input:focus {
   border: 2px solid rgba($color-light, 0.5);
   background-color: rgba($color-light, 0.3);
+  outline: none;
 }
 
 .form-item:hover .form-item__input::placeholder,

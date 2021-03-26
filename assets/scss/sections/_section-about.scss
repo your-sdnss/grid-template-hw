@@ -1,5 +1,13 @@
 .about {
-  padding: $gap / 2 * 10 0;
+  @include lg-min{
+    padding: $gap / 2 * 10 0;
+  }
+  @include lg-md{
+    padding: $gap * 4 0;
+  }
+  @include md{
+    padding: $gap * 3 0;
+  }
 
   letter-spacing: 0.05em;
 
@@ -43,7 +51,7 @@
   font-size: 1.125rem;
   line-height: 1.15;
 
-  @include md-sm {
+  @include lg {
     font-size: 1rem;
   }
 }
