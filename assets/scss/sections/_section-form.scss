@@ -43,10 +43,24 @@
 
   color: $color-light;
   border: 2px solid transparent;
-  border-bottom-color: rgba($color-light, 0.5);
-  background-color: rgba($color-light, 0.1);
 
   font-size: 1.1em;
+}
+
+.form-item__input{
+  border-bottom-color: rgba($color-light, 0.25);
+  background-color: rgba($color-light, 0.05);
+}
+
+.form-item__input::placeholder{
+  color: $color-gray;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.15em;
+}
+
+.form-item__button{
+  border-bottom-color: rgba($color-light, 0.2);
+  background-color: rgba($color-light, 0.1);
 }
 
 .form-item:nth-of-type(1) {
@@ -71,5 +85,5 @@
 
 .form-item:hover .form-item__input::placeholder,
 .form-item__input:focus::placeholder {
-  color: rgba($color-light, 0.6);
+  color: rgba($color-light, 1);
 }

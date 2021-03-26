@@ -837,7 +837,7 @@ a {
 .about__info-container p:nth-of-type(1)::after {
   position: absolute;
   top: 0;
-  width: 3px;
+  width: 2px;
   height: 205px;
   content: "";
   background-color: rgba(100, 100, 100, 0.1);
@@ -896,9 +896,47 @@ a {
   letter-spacing: 0.1em;
   color: #ffffff;
   border: 2px solid transparent;
-  border-bottom-color: rgba(255, 255, 255, 0.5);
-  background-color: rgba(255, 255, 255, 0.1);
   font-size: 1.1em;
+}
+
+.form-item__input {
+  border-bottom-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.form-item__input::-webkit-input-placeholder {
+  color: #637588;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.15em;
+}
+
+.form-item__input::-moz-placeholder {
+  color: #637588;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.15em;
+}
+
+.form-item__input:-ms-input-placeholder {
+  color: #637588;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.15em;
+}
+
+.form-item__input::-ms-input-placeholder {
+  color: #637588;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.15em;
+}
+
+.form-item__input::placeholder {
+  color: #637588;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.15em;
+}
+
+.form-item__button {
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .form-item__button:hover,
@@ -916,24 +954,24 @@ a {
 }
 
 .form-item:hover .form-item__input::-webkit-input-placeholder, .form-item__input:focus::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  color: white;
 }
 
 .form-item:hover .form-item__input::-moz-placeholder, .form-item__input:focus::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  color: white;
 }
 
 .form-item:hover .form-item__input:-ms-input-placeholder, .form-item__input:focus:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  color: white;
 }
 
 .form-item:hover .form-item__input::-ms-input-placeholder, .form-item__input:focus::-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  color: white;
 }
 
 .form-item:hover .form-item__input::placeholder,
 .form-item__input:focus::placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  color: white;
 }
 
 .posts__container {
