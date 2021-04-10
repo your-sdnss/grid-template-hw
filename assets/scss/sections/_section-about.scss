@@ -1,5 +1,13 @@
 .about {
-  padding: $gap / 2 * 10 0;
+  @include lg-min{
+    padding: $gap / 2 * 10 0;
+  }
+  @include lg-md{
+    padding: $gap * 4 0;
+  }
+  @include md{
+    padding: $gap * 3 0;
+  }
 
   letter-spacing: 0.05em;
 
