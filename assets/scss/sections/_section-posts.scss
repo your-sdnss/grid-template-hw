@@ -71,6 +71,19 @@
   font-family: "Roboto Slab", sans-serif;
 }
 
+.posts-item:hover .posts-item__image img{
+  transform: scale(1.2);
+}
+
+.posts-item:hover .posts-item__info{
+  background-color: rgba($color-gray, 0.35);
+}
+
+.posts-item:hover .posts-item__info p,
+.posts-item:hover .posts-item__info h4{
+  color: $color-primary;
+}
+
 .posts-item__link {
   display: grid;
 
@@ -83,6 +96,7 @@
   display: flex;
   align-content: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .posts-item__info {
@@ -92,6 +106,8 @@
   padding: $gap;
 
   background-color: $color-gray-light;
+
+  transition: background-color 0.5s;
 }
 
 .posts-item__info h4,
@@ -99,6 +115,8 @@
   text-align: center;
 
   color: $color-gray;
+
+  transition: color 0.5s;
 }
 
 .posts-item__info h4 {
@@ -114,6 +132,7 @@
   font-size: 1rem;
 }
 
+
 @for $i from 1 through 6 {
   .posts-item:nth-of-type(#{$i}) {
     grid-area: p#{$i};
@@ -123,6 +142,8 @@
   width: 100%;
 
   object-fit: cover;
+
+  transition: transform 0.5s;
 }
 
 .posts__actions {

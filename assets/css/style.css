@@ -999,6 +999,21 @@ a {
   font-family: "Roboto Slab", sans-serif;
 }
 
+.posts-item:hover .posts-item__image img {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.posts-item:hover .posts-item__info {
+  background-color: rgba(99, 117, 136, 0.35);
+}
+
+.posts-item:hover .posts-item__info p,
+.posts-item:hover .posts-item__info h4 {
+  color: #2d3651;
+}
+
 .posts-item__link {
   display: grid;
   height: 100%;
@@ -1014,6 +1029,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow: hidden;
 }
 
 .posts-item__info {
@@ -1022,12 +1038,18 @@ a {
       align-content: center;
   padding: 20px;
   background-color: #e5e5e5;
+  -webkit-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
 }
 
 .posts-item__info h4,
 .posts-item__info p {
   text-align: center;
   color: #637588;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
 }
 
 .posts-item__info h4 {
@@ -1069,6 +1091,11 @@ a {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .posts__actions {
