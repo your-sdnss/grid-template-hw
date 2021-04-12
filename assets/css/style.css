@@ -995,6 +995,7 @@ a {
 
 .posts__container h2 {
   letter-spacing: 0.1em;
+  margin-top: 0;
   color: #2d3651;
   font-family: "Roboto Slab", sans-serif;
 }
